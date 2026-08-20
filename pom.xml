@@ -5,7 +5,7 @@
 
   <groupId>com.github.enr</groupId>
   <artifactId>system-sources</artifactId>
-  <version>0.0.2-SNAPSHOT</version>
+  <version>0.0.2</version>
 
   <name>system-sources</name>
   <url>https://github.com/enr/system-sources</url>
