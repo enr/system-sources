@@ -80,7 +80,7 @@ Add the dependency
 <dependency>
     <groupId>com.github.enr</groupId>
     <artifactId>system-sources</artifactId>
-    <version>${idealwinner.version}</version>
+    <version>v0.0.2</version>
 </dependency>
 ```
 
