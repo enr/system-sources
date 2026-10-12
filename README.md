@@ -80,7 +80,7 @@ Add the dependency
 <dependency>
     <groupId>com.github.enr</groupId>
     <artifactId>system-sources</artifactId>
-    <version>v0.0.2</version>
+    <version>0.2.0</version>
 </dependency>
 ```
 

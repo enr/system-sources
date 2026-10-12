@@ -40,7 +40,8 @@ BASE=$(git merge-base @ "$upstream")
   exit 1
 }
 
-tag_prefix='v'
+# no 'v' prefix: JitPack publishes artifacts with the tag name as version (tag v1.2.3 -> version v1.2.3)
+tag_prefix=''
 release_suffix=''
 group_id='com.github.enr'
 artifact_id='system-sources'
@@ -49,7 +50,7 @@ snapshot_commit_prefix=''
 
 [[ -n "$1" ]] || {
   echo 'Missing release version: aborting release'
-  echo "Release version should be in the format 1.2.3 : pom version will be set to 1.2.3${release_suffix} and the tag will be v1.2.3${release_suffix}"
+  echo "Release version should be in the format 1.2.3 : pom version will be set to 1.2.3${release_suffix} and the tag will be ${tag_prefix}1.2.3${release_suffix}"
   exit 1
 }
 release_version="${1}${release_suffix}"
